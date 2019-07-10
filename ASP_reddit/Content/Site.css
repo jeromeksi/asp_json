@@ -1,4 +1,4 @@
-﻿#team {
+﻿#background {
     background: #eee !important;
 }
 section {
@@ -23,4 +23,7 @@ section .section-title {
 }
 .frontside .card{
     min-height: 312px;
+}
+.container{
+    background:#808080;
 }
