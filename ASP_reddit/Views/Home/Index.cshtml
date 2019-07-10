@@ -1,0 +1,37 @@
+﻿@model  ASP_reddit.Models.RedditList
+@{
+    
+    ViewBag.Title = "Index";
+}
+
+
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">PROGRAMMING NEW</h5>
+        @foreach (ASP_reddit.Models.RedditSubject s in Model.ListTitle)
+        {
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="frontside">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <a href=@s.Url +"" target="_blank">@System.Web.HttpUtility.HtmlDecode(@s.Name)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        }
+        
+    </div>
+</section>
+<!-- Team -->
