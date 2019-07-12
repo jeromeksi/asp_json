@@ -1,28 +1,19 @@
-﻿@model  ASP_reddit.Models.RedditList
-@{
+﻿@{
     
     ViewBag.Title = "Index";
 }
-
-
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<section id="background">
-    <div class="container">
-        <h5 class="section-title h1">PROGRAMMING NEW</h5>
-        @foreach (ASP_reddit.Models.RedditSubject s in Model.ListTitle)
-        {
-            <div class="col-md-4">
-                <div class="frontside">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <a href=@s.Url +"" target="_blank">@System.Web.HttpUtility.HtmlDecode(@s.Name)</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        }
-    </div>
-</section>
-<!-- Team -->
+<script src="~/Scripts/jquery-3.0.0.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+FF
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Dropdown Example
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ul>
+</div> 
